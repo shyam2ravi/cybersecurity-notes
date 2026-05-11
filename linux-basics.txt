@@ -1,3 +1,70 @@
-Linux Commands:
-ls - list files
-cd - change directory
+# 1. Show current directory
+pwd
+
+# 2. List files and folders
+ls -lah
+
+# 3. Change directory
+cd /path/to/folder
+
+# 4. Create a new folder
+mkdir folder_name
+
+# 5. Create an empty file
+touch file.txt
+
+# 6. Copy files/folders
+cp source.txt destination.txt
+cp -r folder1 folder2
+
+# 7. Move or rename files
+mv old.txt new.txt
+
+# 8. Delete files/folders
+rm file.txt
+rm -rf folder_name
+
+# 9. View file contents
+cat file.txt
+less file.txt
+
+# 10. Search inside files
+grep "text" file.txt
+grep -r "text" .
+
+# 11. Find files
+find . -name "file.txt"
+
+# 12. Check disk usage
+df -h
+du -sh folder_name
+
+# 13. Check running processes
+ps aux
+top
+
+# 14. Kill a process
+kill PID
+kill -9 PID
+
+# 15. Download files from internet
+wget URL
+curl -O URL
+
+# 16. Check network information
+ip a
+ping google.com
+
+# 17. File permissions
+chmod +x script.sh
+chmod 755 file
+
+# 18. Change file ownership
+chown user:user file.txt
+
+# 19. Archive and extract files
+tar -czvf archive.tar.gz folder/
+tar -xzvf archive.tar.gz
+
+# 20. Update packages (Debian/Ubuntu)
+sudo apt update && sudo apt upgrade
