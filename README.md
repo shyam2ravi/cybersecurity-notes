@@ -176,7 +176,7 @@
 
 # 
 
-# \- LinkedIn: Add your LinkedIn link
+# \- LinkedIn: https://www.linkedin.com/in/shyam-raveenthiran-679892117/
 
 # \- GitHub: https://github.com/shyam2ravi
 
