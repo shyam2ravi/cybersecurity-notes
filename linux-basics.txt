@@ -68,3 +68,10 @@ tar -xzvf archive.tar.gz
 
 # 20. Update packages (Debian/Ubuntu)
 sudo apt update && sudo apt upgrade
+
+
+history           # Show command history
+clear             # Clear terminal
+man command       # Open manual page
+sudo command      # Run as administrator
+nano file.txt     # Edit file in terminal
