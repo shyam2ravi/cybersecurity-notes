@@ -1,3 +1,59 @@
-Basic Nmap Commands:
+# 1. Basic scan
 nmap 192.168.1.1
-nmap -sV target-ip
+
+# 2. Scan multiple hosts
+nmap 192.168.1.1 192.168.1.2
+
+# 3. Scan subnet
+nmap 192.168.1.0/24
+
+# 4. Scan from file
+nmap -iL targets.txt
+
+# 5. Ping scan (discover live hosts)
+nmap -sn 192.168.1.0/24
+
+# 6. Scan specific ports
+nmap -p 80,443 192.168.1.1
+
+# 7. Scan port range
+nmap -p 1-1000 192.168.1.1
+
+# 8. Fast scan
+nmap -F 192.168.1.1
+
+# 9. Service version detection
+nmap -sV 192.168.1.1
+
+# 10. OS detection
+nmap -O 192.168.1.1
+
+# 11. Aggressive scan
+nmap -A 192.168.1.1
+
+# 12. SYN stealth scan
+sudo nmap -sS 192.168.1.1
+
+# 13. UDP scan
+sudo nmap -sU 192.168.1.1
+
+# 14. Detect firewall filtering
+nmap -sA 192.168.1.1
+
+# 15. Run default NSE scripts
+nmap -sC 192.168.1.1
+
+# 16. Run vulnerability scripts
+nmap --script vuln 192.168.1.1
+
+# 17. Save output to file
+nmap -oN scan.txt 192.168.1.1
+
+# 18. Save output in all formats
+nmap -oA fullscan 192.168.1.1
+
+# 19. Increase scan speed
+nmap -T4 192.168.1.1
+
+# 20. Full TCP port scan
+nmap -p- 192.168.1.1
